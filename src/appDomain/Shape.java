@@ -8,7 +8,7 @@ public abstract class Shape implements Comparable<Shape> {
 	}
 	
 	public double getHeight() {
-		return height
+		return height;
 	}
 	
 	public abstract double getBaseArea();

@@ -9,7 +9,7 @@ public class ShapeComparator {
 		}
 	};
 	
-	public static final Comparator<shape> By_Volume = new Comparator<Shape>() {
+	public static final Comparator<Shape> By_Volume = new Comparator<Shape>() {
 		@Override
 		public int compare(Shape s1, Shape s2) {
 			return Double.compare(s1.getVolume(), s2.getVolume());
