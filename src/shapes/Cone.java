@@ -2,6 +2,7 @@ package shapes;
 import appDomain.Shape;
 
 public class Cone extends Shape {
+        @SuppressWarnings("FieldMayBeFinal")
 	private double radius;
 	
 	public Cone(double height, double radius) {
