@@ -131,6 +131,7 @@ public class Sorts {
         SORT_DISPATCH.put("insertion", (a, c) -> insertionSort(a, c));
         SORT_DISPATCH.put("merge", (a, c) -> mergeSort(a, c));
         SORT_DISPATCH.put("quick", (a, c) -> quickSort(a, c));
+        SORT_DISPATCH.put("heap", (a, c) -> heapSort(a, c));
     }
 
 
@@ -150,7 +151,54 @@ public class Sorts {
             System.out.println(i + "-th: " + arr[i]);
         }
         System.out.println("Last: " + arr[arr.length - 1]);
-}
+    }
 
+    
+    // Heap Sort  
+    public static void heapify(Shape[] arr, int n, int i, Comparator<Shape> comp) { 
+    	int largest = i;
+    	int left = 2 * i + 1;
+    	int right = 2 * i + 2;
+    	
+    	
+    	if (left < n && comp.compare(arr[left], arr[largest]) > 0) {
+    		largest = left;
+    	}
+    	
+    	
+    	if (right < n && comp.compare(arr[right], arr[largest]) > 0) {
+    		largest = right;
+    	}
+    	
+    	
+    	if (largest != i) {
+    		Shape swap = arr[i];
+    		arr[i] = arr[largest];
+    		arr[largest] = swap;
+    		
+    		
+    		heapify(arr, n, largest, comp);
+    	}
+    	
+    }
 
+    
+    public static void heapSort(Shape[] arr, Comparator<Shape> comp) {
+    	int n = arr.length;
+    	
+    	
+    	for (int i = n / 2 - 1; i >= 0; i--) {
+    		heapify(arr, n, i, comp);
+    	}
+    	
+    	
+    	for (int i =n -1; i > 0; i--) {
+    		
+    		Shape temp = arr[0];
+    		arr[0] = arr[i];
+    		arr[i] = temp;
+    		
+    		heapify(arr, i, 0, comp);
+    	}
+    }
 }
