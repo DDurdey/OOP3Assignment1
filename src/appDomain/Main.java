@@ -12,7 +12,7 @@ import shapes.*;
  * Main application class for sorting geometric shapes.
  * Handles command line parsing, file reading, sorting operations, and result output.
  * 
- * @author Your Name
+ * @Team Link
  * @version 1.0
  */
 public class Main {
