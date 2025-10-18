@@ -176,9 +176,7 @@ public class Main {
             case "quick":
                 return "quick";
             case "h":
-            case "heap":
-                return "heap";
-            case "z": // Alternative for heap sort as specified
+            case "heap":    // heap sort as specified as the alternative
                 return "heap";
             default:
                 System.err.println("Error: Unknown sort type '" + sortFlag + "'");
