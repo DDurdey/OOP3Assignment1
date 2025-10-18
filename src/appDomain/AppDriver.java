@@ -504,10 +504,8 @@ public class AppDriver
             this.sortType = sortType;
         }
     }
-
-	}
-
 }
+
 
 
 
