@@ -1,5 +1,21 @@
 package appDomain;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import shapes.*;
+
+/**
+ * Complexity and Sorting - Assignemnt 1
+ * Handles command line parsing, file reading, sorting operations, and result output.
+ * 
+ * @Team Link
+ * @version 1.0
+ */
+
 /**
  * <p>
  * This application driver code is designed to be used as a basis for the
@@ -34,3 +50,4 @@ public class AppDriver
 	}
 
 }
+
