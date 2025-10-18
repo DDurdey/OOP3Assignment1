@@ -24,6 +24,7 @@ import shapes.*;
  * to add all the correct functionality.
  * </p>
  */
+
 public class AppDriver
 {
 	/**
@@ -31,6 +32,8 @@ public class AppDriver
 	 *  
 	 *  @param args The input to control the execution of the application.
 	 */
+
+	
 	public static void main( String[] args )
 	{
 
@@ -54,7 +57,6 @@ public class AppDriver
      *
      * @param args command line arguments: -f<filename> -t<compare_type> -s<sort_algorithm>
      */
-		
         try {
             CommandLineArgs cmdArgs = parseArguments(args);
             
@@ -506,6 +508,7 @@ public class AppDriver
 	}
 
 }
+
 
 
 
