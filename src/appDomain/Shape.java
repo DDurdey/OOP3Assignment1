@@ -4,7 +4,7 @@ package appDomain;
  * Abstract base class representing a geometric shape with height.
  * Implements Comparable to enable natural ordering by height.
  * 
- * @author Your Name
+ * @Team Link
  * @version 1.0
  */
 public abstract class Shape implements Comparable<Shape> {
