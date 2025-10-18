@@ -10,7 +10,7 @@ import java.util.function.BiConsumer;
  * Implements both simple and efficient sorting algorithms with consistent APIs.
  * All sorts are performed in-place and support custom comparators.
  * 
- * @author Your Name
+ * @Team Link
  * @version 1.0
  */
 public final class Sorts {
