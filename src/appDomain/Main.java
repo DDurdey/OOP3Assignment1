@@ -9,7 +9,7 @@ import java.util.List;
 import shapes.*;
 
 /**
- * Main application class for sorting geometric shapes.
+ * Complexity and Sorting - Assignemnt 1
  * Handles command line parsing, file reading, sorting operations, and result output.
  * 
  * @Team Link
